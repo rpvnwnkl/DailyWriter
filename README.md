@@ -4,6 +4,7 @@ __I need a tool which will automatically login, write, and submit my daily words
 
 ##How:
 
+1. At scheduled time the script will start and then
 1. Load login page
 2. Enter login credentials
 3. Submit credentials 
@@ -13,6 +14,10 @@ __I need a tool which will automatically login, write, and submit my daily words
 7. Submit filled form
 
 ##Methods:
+
+* Use a cron job to schedule the script execution
+    * See: http://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
+    * and: https://help.ubuntu.com/community/CronHowto
 
 * From what I have gathered the load page and login will be able to be completed using a combination of Mechanize and [Beautiful Soup](http://www.crummy.com/software/BeautifulSoup/bs4/doc/), both libraries which will be new to me. [PSF Mechanize Page](https://pypi.python.org/pypi/mechanize/); [3rd Party Mechanize Docs](joesourcecode.com/Documentation/mechanize0.2.5/); The [Mechanize Sourceforge Site](http://wwwsearch.sourceforge.net/mechanize/) is down right now. 
 
