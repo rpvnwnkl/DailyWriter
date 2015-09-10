@@ -1,13 +1,15 @@
 #!usr/bin/env python
 import random
 import string
-
+wordlist = open('/usr/share/dict/words', 'r').read()
+wordList = wordlist.split(' ')
+wordList = [x.replace('\n', '') for x in wordList]
 words = ''
-for i in range(125):
+
+for i in range(750):
     newWord = ''
-    for e in range(random.randrange(0,15)):
-        newWord += random.choice(string.ascii_letters)
-    words += newWord
+    newWord += random.choice(wordList)
+    words += 'Matt'
     words += ' '
 wordFile = open('testwords.txt', 'w')
 wordFile.write(words)
