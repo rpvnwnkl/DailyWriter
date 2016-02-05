@@ -1,0 +1,3 @@
+[submodule "wordGen/char-rnn"]
+	path = wordGen/char-rnn
+	url = https://github.com/karpathy/char-rnn.git
